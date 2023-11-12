@@ -286,33 +286,32 @@ LOGGING = {
 
         'django.request': {
             'handlers': ['errors_hand', 'mail_admins', ],
-            'level': 'ERROR',
-            'propagate': False,
+            'level': 'INFO',
+            'propagate': True,
         },  # 3 и 5
 
         'django.server': {
             'handlers': ['errors_hand', 'mail_admins', ],
-            'level': 'ERROR',
-            'propagate': False,
+            'level': 'INFO',
+            'propagate': True,
         },  # 3 и 5
 
         'django.template': {
             'handlers': ['errors_hand', ],
-            'level': 'ERROR',
+            'level': 'INFO',
             'propagate': True,
         },  # 3
 
         'django.db.backends': {
             'handlers': ['errors_hand', ],
-            'level': 'ERROR',
+            'level': 'INFO',
             'propagate': True,
         },  # 3
 
         'django.security': {
             'handlers': ['security_hand', ],
             'level': 'INFO',
-            'propagate': False,
+            'propagate': True,
         },  # 4
     }
 }
-
