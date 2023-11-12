@@ -280,7 +280,7 @@ LOGGING = {
     'loggers': {
         'django': {
             'handlers': ['console_a', 'console_b', 'console_c', 'general_hand', ],
-            'level': 'DEBUG',
+            'level': 'INFO',
             'propagate': True,
         },  # 1 и 2
 
